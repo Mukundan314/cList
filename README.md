@@ -31,3 +31,11 @@ python like list for c.
 
 See [LICENSE](LICENSE)
 
+## Changelog ##
+
+See [CHANGELOG.md](CHANGELOG.md)
+
+## Documentation ##
+
+Documentation is available at [docs/index.md](docs/index.md)
+
