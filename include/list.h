@@ -41,6 +41,14 @@ void append(list *, type, ...);
 
 void append_element(list *, element);
 
+void extend(list *, list);
+
+list slice(list l, int start, int end, int step);
+
+list sort(list l, int (*cmpr)(element, element));
+
+list range(int start, int stop, int step);
+
 element get(list, int index);
 
 list map(element (*func)(element), list);

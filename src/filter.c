@@ -10,9 +10,8 @@ list filter(int (*func)(element), list l)
 
 	for (size_t i = 0; i < l.nmemb; i++) {
 		e = get(l, i);
-		if (func(e)) {
+		if (func(e))
 			append_element(&result, e);
-		}
 	}
 
 	return result;
