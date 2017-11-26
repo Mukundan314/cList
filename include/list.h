@@ -59,6 +59,8 @@ element reduce(element (*func)(element, element), list);
 
 void print_list(list);
 
+void print_element(element e);
+
 list slice(list, int start, int stop, int step);
 
 #endif /* LIST_LIBRARY_H */
