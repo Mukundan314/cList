@@ -1,6 +1,4 @@
 #include <stdarg.h>
-#include <stdio.h>
-#include <malloc.h>
 
 #include <list.h>
 
