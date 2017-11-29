@@ -1,4 +1,4 @@
-### Steps to reproduce behaviour
+### Steps to reproduce behavior
 
 ### Expected Behavior
 
