@@ -18,7 +18,7 @@ python like list for c.
 1. run make:  
  ```make && sudo make install```
 
-###### Note: include list.h in needed files and while compiling link it to liblist.a (this can be done by adding the flag -llist in gcc) ######
+**Note: include list.h in needed files and while compiling link it to liblist.a (this can be done by adding the flag -llist in gcc)**
 
 ## License ##
 
