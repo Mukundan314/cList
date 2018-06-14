@@ -38,8 +38,11 @@ typedef struct _list {
 	size_t nmemb;
 } list;
 
-
 element get(list, int index);
+
+element max(list, (*func)(element, element))
+
+element min(list, (*func)(element, element))
 
 element reduce(element (*func)(element, element), list);
 
@@ -66,5 +69,6 @@ void extend(list *, list);
 void print_element(element);
 
 void print_list(list);
+
 
 #endif /* LIST_LIBRARY_H */
