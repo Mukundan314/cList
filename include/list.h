@@ -53,7 +53,7 @@ list range(int start, int stop, int step);
 
 list slice(list, int start, int stop, int step);
 
-list sort(list l, int (*cmpr)(element, element));
+list sorted(list l, int (*cmpr)(element, element));
 
 size_t len(list);
 

@@ -8,7 +8,7 @@ list merge(list l1, list l2, int (*cmpr)(element, element))
 	INIT_LIST(result);
 	i = j = 0;
 
-	while ((i < l1.nmemb) && (j < l2.nmemb)) {
+	while ((i < len(l1)) && (j < len(l2))) {
 		if (cmpr(get(l1, i), get(l2, j)) < 0) {
 			append_element(&result, get(l1, i));
 			i += 1;
@@ -24,9 +24,9 @@ list merge(list l1, list l2, int (*cmpr)(element, element))
 	return(result);
 }
 
-list sort(list l, int (*cmpr)(element, element))
+list sorted(list l, int (*cmpr)(element, element))
 {
-	if (l.nmemb == 1)
+	if (len(l) == 1)
 		return(l);
 
 	list l1, l2;
@@ -34,16 +34,11 @@ list sort(list l, int (*cmpr)(element, element))
 	INIT_LIST(l1);
 	INIT_LIST(l2);
 
-	for (size_t i = 0; i < l.nmemb; i++) {
-		if (i < l.nmemb/2)
-			append_element(&l1, get(l, i));
-		else
-			append_element(&l2, get(l, i));
-	}
+	l1 = slice(l, 0, len(l)/2, 1);
+	l2 = slice(l, len(l)/2, len(l), 1);
 
-	l1 = sort(l1, cmpr);
-	l2 = sort(l2, cmpr);
+	l1 = sorted(l1, cmpr);
+	l2 = sorted(l2, cmpr);
 
 	return(merge(l1, l2, cmpr));
 }
-
