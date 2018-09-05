@@ -1,15 +1,23 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/mukundan314/clist/badge)](https://www.codefactor.io/repository/github/mukundan314/clist)
+<h1 align="center">C Lists</h1>
 
-# C Lists #
+<div align="center">
+ <strong>python like list for c.</strong>
+</div>
 
-python like list for c.
+<br />
 
-## Prerequisites ##
+<div align="center">
+ <a href="https://www.codefactor.io/repository/github/mukundan314/clist">
+  <img src="https://www.codefactor.io/repository/github/mukundan314/clist/badge" />
+ </a>
+</div>
+
+## Prerequisites
 
 * cmake
 * make
 
-## Installation ##
+## Installation
 
 1. clone this repository with:  
  ```git clone https://github.com/Mukundan314/cList.git && cd cList```
@@ -22,15 +30,15 @@ python like list for c.
 
 **Note: include list.h in needed files and while compiling link it to liblist.a (this can be done by adding the flag -llist in gcc)**
 
-## License ##
+## License
 
 See [LICENSE](LICENSE)
 
-## Changelog ##
+## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md)
 
-## Documentation ##
+## Documentation
 
 Documentation is available at [docs/index.md](docs/index.md)
 
